@@ -1,0 +1,257 @@
+CircleArea <- function(radius) {radius*radius*pi}
+CircleAreA(5)
+CircleArea(5)
+CircleArea <- function(radius) {radius^2 * pi}
+CircleArea(5)
+CircleArea(10)
+a
+CircleArea(a)
+CircleArea(M)
+M
+M <- dice
+M
+dim(M) <- c(5,10)
+M
+CircleArea(M)
+plot (M, CircleArea(M))
+plot (dice, CircleArea(dice))
+plot(a,CircleArea(a))
+CircleArea
+hist(10)
+hist(CircleArea(M))
+hist(CircleArea(a))
+set.seed(1); dice <- sample(1:6, 50, replace=T) ; dice
+hist(dice)
+hist(sort(dice))
+?bplot
+rnorm(dice)
+barplot(dice)
+barplot(sort(dice))
+boxplot(dice)
+boxplot(M)
+dice[3] = 100
+dice [10] = -1003
+boxplot(doice)
+boxplot(dice)
+dice [10] = -100
+boxplot(dice)
+dice [10] = -10
+dice[3] = 10
+boxplot(dice)
+piechart(dioce)
+piechart(dice)
+pchart(dice)
+slices(dice)
+pie(doce
+d
+pie(dice)
+set.seed(1); dice <- sample(1:6, 50, replace=T) ; dice
+pie(dice)
+set.seed(1); dice <- sample(1:6, 5, replace=T) ; dice
+pie(dice)
+Normalizer <- function(vector) {(vector-min(vector))/(max(vector)-min(vector))}
+Normalizer(a)
+aNormalized <- Normalizer(a)
+hist(aNormalizer)
+hist(aNormalizer]d)
+hist(aNormalized)
+?hist
+d <- 31:50
+d
+ValueFlipper <- function(x) {x-mean(x)}
+x <- c(1,100)
+x
+x <- 1:100
+c
+x
+Normalizer <- function(x) {(x-min(x))/(max(x)-min(x))}
+b <= 1:5
+b <- 1:5
+Normalizer(b)
+ValueFipper(Normalizer(x))
+ValueFlipper(Normalizer(x))
+Normalizer(x)
+ValueFlipper <- function(x) {abs(max(x)-x)}
+ValueFlipper(Normalizer(x))
+?names()
+example(name)
+?attach()
+?require()
+f <- rnorm(100)
+f
+hist(f)
+f(3)
+f[3]
+f[3] <-2.3
+f[3]
+a <- sample(letters[1:4],100,replace=T)
+a
+a <- sample(letters[1:4],100,replace=T) ; pie(a)
+table(a)
+a <- sample(letters[1:4],100,replace=T) ; pie(table(a))
+a <- sample(letters[1:4],100,replace=T) ; plot(table(a))
+pei(a)
+pie(a)
+length <- rnorm(10,180,10)
+rnorm
+length
+weight <- (length/100^2 * 25)
+weight
+weight <- (length/100)^2 * 25)
+weight <- (length/100)^2 * 25
+weight
+measurement <- data.frame(cbind(length,weight))
+?cbind
+measurement
+?rnorm
+hist(length)
+measurements2 <- round(measurements)
+measurements2 <- round(measurement)
+measurements2
+measurements1 <- round(measurement,4)
+measurements1
+?read.table
+TableReading <- read.table("clipboard",header=T,sep="\t")
+TableReading <- read.table("/Users/maxgrossman/Desktop/DEVELOP/Rclass/List_P_3D_data.csv",header=T,sep=";")
+head(TableReading)
+names(TableReading)
+measurements <- c("EDV","ESV","SV","EF")
+TableReading2 <- read.table("/Users/maxgrossman/Desktop/DEVELOP/Rclass/List_P_3D_data.csv",header=T,sep="\t")
+TableReading2
+names(TableReading)
+head(TableReading)
+library(raster)
+FILE_List = list.files("/users/maxgrossman/desktop/DEVELOP/data/CHIRPS",pattern='.bil')
+FILE_List
+for(file in FILE_List) {#
+    input = raster(file)#
+    writeRaster(input,substr(file,1,16),format='GTiff',datatype='INT1U',overwrite=TRUE)#
+}
+FILE_List[1]
+raster(FILE_List[1])
+FILE_List = list.files("/users/maxgrossman/desktop/DEVELOP/data/CHIRPS",pattern='.hdr')
+for(file in FILE_List) {#
+    input = raster(file)#
+    writeRaster(input,substr(file,1,16),format='GTiff',datatype='INT1U',overwrite=TRUE)#
+}
+FILE_List = list.files("/users/maxgrossman/desktop/DEVELOP/data/CHIRPS",pattern='.hdr')
+FILE_List
+raster(FILE_List[1])
+library(raster)
+GPMraster <-raster("/Users/maxgrossman/Desktop/GPM/malprGPM_201601clipped.resampled.tif")
+GPMraster
+plot(GPMRaster)
+plot(GPMraster)
+GPMraster <-raster("/Users/maxgrossman/Desktop/CHIRPS1.9/v1p9chirps201408.resampled.tif")
+GPMraster
+CHIRPSraster <- GPMraster
+plot(CHIRPSraster)
+Craster <-raster("/Users/maxgrossman/Desktop/CHIRPS1.9/v1p9chirps201408.resampled.tif")
+Craster
+C2raster <-raster("/Users/maxgrossman/Desktop/CHIRPS2.0/malprCHIRPS2.0_2016.01.clipped.resampled.tif")
+C2raster
+Traster <-raster("/Users/maxgrossman/Desktop/TRMM2/malprCHIRPS2.0_2016.01.clipped.resampled.tif)
+""
+"
+Traster <-raster("/Users/maxgrossman/Desktop/TRMM2/malprCHIRPS2.0_2016.01.clipped.resampled.tif")
+Traster <-raster('/Users/maxgrossman/Desktop/TRMM2/malprCHIRPS2.0_2015.06.clipped.resampled.tif')
+Traster <-raster('/Users/maxgrossman/Desktop/TRMM2/malprCHIRPS2.0_2015.08.clipped.tif')
+library("raster")
+ClipperShape<-shapefile("/Users/maxgrossman/Downloads/malawi_buffer")
+ClipperShape<-shapefile("/Users/maxgrossman/Downloads/malawi_buffer/mal_dis_buf_wgs.shp")
+CHIRPS_rast<-raster("/Users/maxgrossman/Downloads/chirps-v2.0.2015.03.tif")
+CHIRPS_rast<-mask(CHIRPS_rast,CLipperShape)
+CHIRPS_rast<-mask(CHIRPS_rast,ClipperShape)
+plot(CHIRPS_rast)
+plot(CHIRPS_rast,ext=ClipperShape)
+CHIRPS_rast2<-raster("/Users/maxgrossman/Downloads/chirps-v2.0.2015.09.tif")
+CHIRPS_rast2<-mask(CHIRPS_rast2,ClipperShape)
+plot(CHIRPS_rast2,ext=ClipperShape)
+plot(CHIRPS_rast,ext=ClipperShape)
+Points<-shapefile("/Users/maxgrossman/Downloads/Jordan_CHIRPS_Stations/stations201503.shp")
+plot(Points,add=TRUE)
+Points<-shapefile("/Users/maxgrossman/Downloads/Jordan_CHIRPS_Stations/stations201509.shp")
+plot(CHIRPS_rast2,ext=ClipperShape)
+plot(Points,add=TRUE)
+load("/Users/maxgrossman/Desktop/IntermediateGIS/R for Spatial Analysis/Chapter5/Chapter5.reading.R")
+pwdW()
+pdir()
+setwd("/Users/maxgrossman/desktop/prosemgeog/pohick/shapefiles#
+")
+setwd("/Users/maxgrossman/desktop/prosemgeog/pohick/shapefiles")
+require(rgdal)
+nature <- readOGR(".","pohick-nature")
+names(nature)
+unique(as.character(nature$natural))
+nat_type <-unique(as.character(nature$natural))
+nat_type
+for(nat in nat_type) {
+}
+?assign
+for(nat in nat_type) {
+assign(paste(pohick,nat,sep="."),nat_type[nat_type$natural %in% nat,])
+}
+for(nat in nat_type) {
+assign(paste("pohick",nat,sep="."),nat_type[nat_type$natural %in% nat,])
+}
+assign(paste("pohick",nat,sep="."),nat_type[as.character(nat_type$natural) %in% nat,])
+for(nat in nat_type) {
+assign(paste("pohick",nat,sep="."),nature[as.character(nature$natural) %in% nat,])
+}
+pohick.wood
+for(nat in nat_type) {
+assign(paste("pohick",nat,sep="."),nature[as.character(nature$natural) %in% nat,])
+}
+list_shapes <- c()
+for(nat in nat_type) {
+list_shapes[length(list_shapes)+1L]<-assign(paste("pohick",nat,sep="."),nature[as.character(nature$natural) %in% nat,])
+}
+for(nat in nat_type) {
+list_shapes[[length(list_shapes)+1L]]<-assign(paste("pohick",nat,sep="."),nature[as.character(nature$natural) %in% nat,])
+}
+for(nat in nat_type) {
+list_shapes[[length(list_shapes)+1L]]<-assign(paste("pohick",nat,sep="."),nature[as.character(nature$natural) %in% nat,])
+}
+writeOGR(pohick.wood,".","pohick-wood",driver="ESRI SHAPEFILE")
+writeOGR(pohick.wood,".","pohick-wood",driver="ESRI Shapefile")
+unique(as.character(nature$natural))
+writeOGR(pohick.wetland,".","pohick-wood",driver="ESRI Shapefile")
+writeOGR(pohick.wetland,".","pohick-wetland",driver="ESRI Shapefile")
+writeOGR(pohick.water,".","pohick-water",driver="ESRI Shapefile")
+writeOGR(pohick.scrub,".","pohick-scrub",driver="ESRI Shapefile")
+writeOGR(pohick.coastline,".","pohick-coastline",driver="ESRI Shapefile")
+readOGR(".","pohick-landuse")
+landuse <-readOGR(".","pohick-landuse")
+names(landuse)
+unique(as.character(landuse$landuse))
+landuse-types <- unique(as.character(landuse$landuse))
+landuse-types <- unique(as.character(landuse$landuse))
+landuse.types <- unique(as.character(landuse$landuse))
+for(types in landuse.types) {}
+for(types in landuse.types) {assing(paste("pohick",types,sep="."),landuse[as.character(landuse$landuse %in% types),])}
+for(types in landuse.types) {assign(paste("pohick",types,sep="."),landuse[as.character(landuse$landuse %in% types),])}
+for(types in landuse.types) {assign(paste("pohick",types,sep="."),landuse[as.character(landuse$landuse) %in% types,])}
+thislist<-c()
+thislist<-list()
+for(types in landuse.types) {assign(paste("pohick",types,sep="."),landuse[as.character(landuse$landuse) %in% types,])}
+for(types in landuse.types) {assign(paste("pohick",types,sep="."),landuse[as.character(landuse$landuse) %in% types,])
+thislist[[lenght(thislist)+1L]]<-assign(paste("pohick",types,sep="."),landuse[as.character(landuse$landuse) %in% types,])}
+for(types in landuse.types) {
+thislist[[length(thislist)+1L]]<-assign(paste("pohick",types,sep="."),landuse[as.character(landuse$landuse) %in% types,])}
+thislist
+for(shapes in thislist) {
+writeOGR(shapes,".",deparse(substitute(shapes)),driver="ESRI Shapefile")
+}
+for(shapes in thislist) {
+writeOGR(shapes,".",str(deparse(substitute(shapes))),driver="ESRI Shapefile")
+}
+for(shapes in thislist) {
+writeOGR(shapes,".",deparse(substitute(shapes)),driver="ESRI Shapefile")
+}
+lapply(thislist,function(x) writeOGR(x,".",deparse(substitute(x),driver="ESRI Shapefile"))
+)
+lapply(thislist,function(x) writeOGR(x,".",deparse(substitute(x)),driver="ESRI Shapefile"))
+for(types in landuse.types) {
+shp <- landuse[as.character(landuse$landuse) %in% types,]
+writeOGR(shp,".",paste("pohick",types,sep="-"),driver="ESRI Shapefile")
+}

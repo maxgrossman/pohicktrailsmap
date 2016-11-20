@@ -1,12 +1,9 @@
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
+title: Pohick Trail Mappers 
+email: m.grossman1813@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Pohick Trail Mappers is a project for the Geogre Washington University Senior Seminar coures's final project.
+  This is a final project for the GW Geography Department's Senior Seminar.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
-
+url: "https://maxgrossman.github.io/pohicktrailsmap/" # the base hostname & protocol for your site
 # Build settings
 markdown: kramdown

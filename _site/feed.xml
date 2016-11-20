@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Your awesome title</title>
-    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+    <title>Pohick Trail Mappers</title>
+    <description>This is a final project for the GW Geography Department&#39;s Senior Seminar.
 </description>
-    <link>http://yourdomain.com/</link>
-    <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 19 Nov 2016 23:35:38 -0500</pubDate>
-    <lastBuildDate>Sat, 19 Nov 2016 23:35:38 -0500</lastBuildDate>
+    <link>https://maxgrossman.github.io/pohicktrailsmap//</link>
+    <atom:link href="https://maxgrossman.github.io/pohicktrailsmap//feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sun, 20 Nov 2016 09:19:05 -0500</pubDate>
+    <lastBuildDate>Sun, 20 Nov 2016 09:19:05 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -28,8 +28,8 @@
 
 </description>
         <pubDate>Sat, 19 Nov 2016 18:05:51 -0500</pubDate>
-        <link>http://yourdomain.com/jekyll/update/2016/11/19/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2016/11/19/welcome-to-jekyll.html</guid>
+        <link>https://maxgrossman.github.io/pohicktrailsmap//jekyll/update/2016/11/19/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">https://maxgrossman.github.io/pohicktrailsmap//jekyll/update/2016/11/19/welcome-to-jekyll.html</guid>
         
         
         <category>jekyll</category>

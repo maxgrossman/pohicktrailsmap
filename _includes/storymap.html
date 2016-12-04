@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/leaflet.css" />
+    <link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">   
+    <style>
+        
+        .images img {
+            display: block;
+            margin: auto;
+        }
+    
+        .photos {
+            text-align: center;
+            margin-right: 35px
+        }
+        .photos li {
+            display:inline;
+            list-style-type: none;
+            padding:0 2px 0 2px; 
+        }
+        
+        .photos li img {
+            width:30%;
+        }
+        
+        .RainAssessment {
+            width:100%;
+        }
+        
+        .RainAssessment th {
+            height:50px;
+        }
+        
+        .RainAssessment tr {
+            height:25px;
+        }
+        
+        .story {
+            color:white;
+        }
+        #team {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .viewing {
+            color:black;
+        }
+        
+    </style>
+</head>
+<body>
+
+<div class="container-fluid" style="font-family:'Century Gothic' ">
+    <div class="row">
+        <div class="col-sm-9 col-md-4 main">
+            <div class="page-header">
+                <h1>Pohick Trails Map</h1>
+                <h4>Utilizing Open Source Tools for Community Based Mangement in Pohick Bay Regional Park</h4>
+                <br/>
+                <h6 id="team">Team: Jenny Mannix, Jacob Pavlik, Tristan Gounard, and Max Grossman</h6>
+            <div>
+                <ul class="photos">
+                    <li><img src="../images/jacob.png"/></li>
+                    <li><img src="../images/tristan.png"></li>
+                    <li><img src="../images/jacob.png"/></li>
+                    <li><img src="../images/max.png"</li>
+                </ul>
+            </div>
+            
+            </div>    
+            <div class="story">
+                
+            <section data-place="overview">
+                <h2></h2>
+                <p></p>
+            </section>
+                
+            <section data-place="alabama">
+                <h2></h2>
+                <p></p>
+                
+            </section>
+            <section data-place="NSSTC">
+                <h2></h2>
+                <p></p>
+            </section>
+            <section data-place="partners">
+                <h2></h2>
+                <p></p>
+                <p></p>
+            </section>
+            <section data-place="malawi">
+                <h2></h2>
+                <p></p>
+                <p></p>
+                <p></p>
+            </section>
+            <section data-place="lsloc">
+                <h2></h2>
+                <p></p>
+                <p></p>
+                <p></p>
+            </section>
+            <section data-place="goddard">
+                <h2></h2>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                
+            </section>
+            <section data-place="lspoint">
+                <h2></h2>
+                <p></p>
+                <p></p>
+                <p></p>
+                <div class="images">
+                    <a href="https://github.com/maxgrossman/maxgrossman.github.io/blob/master/_data/ls.geojson"><img src="FoundLandslide.png" style="width:100%"/></a>
+                </div>
+                <p style="font-size:0.8em"></p>
+            </section>
+            <section data-place="malawi">
+                <h2>Landslide Susceptibility &amp; Exposure Maps</h2>
+                <div>
+                    <h4>Data Aquisition</h4>
+                    <p>Create topographic, land cover, soil type, and other landslide related datasets and landslide point layer.</p>
+                </div>
+                <div>
+                    <h4>Data Processing</h4>
+                    <p>Create Susceptibility Map using the Maximum Entropy Model, and intersect Susceptibility Map with LandScan to create Exposure Map.</p>
+                </div>
+                <div>
+                    <h4>Accuracy Assessment</h4>
+                    <p>Sample 25% of landslide points, consider “true” if susceptibility above 0.50. “True” points divided by all sampled points is accuracy.</p>
+                </div>
+            </section>
+            <section data-place="malawi">
+                <h2>Map Results</h2>
+                <div class="images">
+                    <a href="https://maxgrossman.github.io/assets/images/maps/Malawi:%20Landslide%20Susceptibility.jpg"><img src="SusceptibilityMap.jpg" style="width:75%"/></a>
+                </div>
+                <br/>
+                <p style="text-align:center;">Susceptibility in northwest, central, and southeastern Malawi.</p>
+                <div class="images"><a href="https://maxgrossman.github.io/assets/images/maps/Malawi:%20Landslide%20Exposure.jpg">
+                    <img src="ExposureMap.jpg" style="width:75%"/></a>
+                </div>
+                <p style="font-size:0.8em; margin-left:12%">Source: NASA DEVELOP</p>
+                <br/>
+                <p style="text-align:center;">Exposed cities include Blantyre, Zomba, and Mzuzu.</p>
+                <p style="text-align:center;">13 million people are in susceptible areas.</p>
+            </section>
+            <section data-place="world">
+                <h2>Rainfall Assessment</h2>
+                <div>
+                    <h4>Data Aquisition</h4>
+                    <p>Download TRMM, GPM, and CHIRPS 2.0 at monthly accumulation and average daily precipitation per month.</p>
+                </div>
+                <div>
+                    <h4>Data Processing</h4>
+                    <p>Extract values at 500 random points for all datasets. Subset upper quartile for each dataset.</p>
+                </div>
+                <div>
+                    <h4>Data Analysis</h4>
+                    <p>Calculate and report correlation coefficient for GPM &amp; CHIRPS 2.0 and TRMM &amp; CHIRPS 2.0.</p>
+                </div>
+            </section>
+            <section data-place="world">
+                <h2>Rainfall Assessment Results</h2>
+                <table class="RainAssessment">
+                    <tr style="font-size:.8em">
+                        <th>Data Source</th>
+                        <th>Temporal Resolution</th>
+                        <th>Avg. Correlation</th>
+                        <th>Min. Correlation</th>
+                        <th>Max Correlation</th>
+                    </tr>
+                    <tr>
+                        <td>TRMM</td>
+                        <td>
+                            <table>
+                                <tr><td>Tot. Month</td></tr>
+                                <tr><td>Avg. Daily</td></tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table class="correl">
+                                <tr><td align="right">0.358</td></tr>
+                                <tr><td>0.373</td></tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table class="correl">
+                                <tr><td>-0.198</td></tr>
+                                <tr><td>-0.058</td></tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table class="correl">
+                                <tr><td>0.890</td></tr>
+                                <tr><td>0.866</td></tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>GPM</td>
+                        <td>
+                            <table>
+                                <tr><td>Tot. Month</td></tr>
+                                <tr><td>Avg Daily</td></tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table class="correl">
+                                <tr><td>0.199</td></tr>
+                                <tr><td>-0.025</td></tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table class="correl">
+                                <tr><td>-0.117</td></tr>
+                                <tr><td>-0.538</td></tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table class="correl">
+                                <tr><td>0.745</td></tr>
+                                <tr><td>0.607</td></tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Study Period: March 2014 - January 2015</td>
+                    </tr>
+                </table>
+            </section>
+            <section data-place="huntsville">
+                <h2>What I learned</h2>
+                <p>Modeling Landslides in Challenging</p>
+                <p>Preparing Data is very important</p>
+                <p>Teamwork is crucial</p>
+            </section>
+            <section data-place="lsloc">
+                <h2>Future work</h2>
+                <p>Test model at finer scales</p>
+                <p>Incorporate Inundation Duration Curves</p>
+            </section>    
+            <section data-place="lsloc">
+                <h2>Thanks!</h2>
+                <p>Contact: m.grossman1813@gmail.com</p>
+                <p>Site: maxgrossman.github.io</p>
+                <p style="font-size:.8em;">All opinions, findings, and conclusions or recommendations expressed are mine and do not necessarily reflect the views of the National Aeronautics and Space Administration.
+</p>
+            </section>
+            </div>
+        </div>
+        <div id="map" class="col-sm-3 col-md-8 sidebar"></div>
+    </div>
+</div>
+<script src="../js/underscore-min.js"></script>
+<script src="../js/leaflet/leaflet.js"></script>
+<script src="../js/jquery-3.1.0.min.js" type="text/javascript"></script>
+<script src="../js/leaflet-providers-master/leaflet-providers.js"></script>
+<script type="text/javascript" src="../../js/storymapPHK.js"></script>
+<script type="text/javascript">
+    (function () {
+        'use strict';
+        
+        // additional layers
+        var layers = {};
+
+        var markers = {
+            alabama: {lat:33.93682781609359, lon:-87.0831298828125,zoom:9} ,
+            bgraves: {lat: 34.73337251280407, lon: -86.63973391056061, zoom: 16},
+            huntsville: {lat: 34.7304, lon: -86.5861, zoom: 12},
+            goddard: {lat:38.9923325,lon:-76.852472,zoom:15},
+            lsloc: {lat: -15.96621632476544, lon: 35.65381774902344, zoom: 11},
+            lspoint: {lat: -15.7982551002395, lon: 35.712432861328125, zoom: 14},
+            malawi: {lat: -13.603278132528756, lon: 34.21142578125, zoom: 7},
+            NSSTC: {lat: 34.72461144332367, lon: -86.64497494697571, zoom: 15},
+            partners: {lat: 2, lon: -13.7, zoom: 3},
+            world: {lat: -13.603278132528756, lon: 5.21142578125, zoom: 2}      
+        };
+
+        $('.main').storymap(
+            {markers: markers}
+        );
+    }());
+</script>
+</body>
+</html>

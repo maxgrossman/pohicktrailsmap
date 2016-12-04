@@ -3,3 +3,23 @@ layout: page
 title: Team
 permalink: /team/
 ---
+
+<div>
+
+  <!--<h4>Who we are</h4> --->
+  <div>
+    {% for person in site.people %}
+      <div>
+        <h2>
+          <a href="{{ member.url }}">{{ person.name }}</a>
+        </h2>
+        {% if person.image %}
+        <img width="200px" style="float:left; margin-right: 16px;" src=" {{ member.image }}">
+        {% endif %}
+        <p>{{ member.content }}</p>
+      </div>
+    {% endfor %}
+  </div>
+
+
+</div> 

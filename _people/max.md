@@ -1,10 +1,9 @@
 ---
 layout: person
-category: people
-permalink: /people/max/
+permalink: /team/max/
 name: Max Grossman
 image: /images/max.png
 published: true
 ---
 
-Max 
+Max is an senior geography and international affairs student at GW that really likes making maps. When he isn't making maps he's, looking at maps on twitter, surfing, or thinking about surfing.

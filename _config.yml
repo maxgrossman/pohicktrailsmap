@@ -5,5 +5,12 @@ description: > # this means to ignore newlines until "baseurl:"
   This is a final project for the GW Geography Department's Senior Seminar.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://maxgrossman.github.io/pohicktrailsmap/" # the base hostname & protocol for your site
+
+# collection for md bios
+collections:
+    people:
+        output: true
+        permalink: /team/:path/
+
 # Build settings
 markdown: kramdown

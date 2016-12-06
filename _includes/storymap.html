@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="../css/leaflet.css" />
     <link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css">
     <style>    
+        * { font-family: Helvetica; }
         .breakpoint-current {
             left: 0;
             margin-top: -10px;
@@ -62,20 +63,24 @@
             font-size: 8;
         }
         section {
-            padding: 5px 10px 10px 10px;
-            border-radius: 10px;
+            padding: 5px 30px 10px 30px;
+            color: rgba(0,0,0,.0)
         }   
          .sidebar {
            /* display: none;*/
         }        
          .story {
             color:white;
+            border-radius: 10px;
+
         }      
         #team {
             text-align: left;
             margin: 30px 0 30px 0;
         }       
         .viewing {
+            border-radius: 10px;
+            margin: 5px 10px 10px 10px;
             color:black;
             background: #eee;
         }        
@@ -107,7 +112,15 @@
             
         <div class="story">
             
-            <section data-place="Mason_Neck"  style="backgroundr:white">
+            <section data-place="Mason_Neck" 
+                     style="background: rgba(0,0,0,.0) !important;
+                            border-top-left-radius:10px;
+                            border-top-right-radius:10px;
+                            color: black">
+                <div style="text-align:center;
+                            margin-top:10px;">
+                    <p>Scroll down to view presentation</p>
+                </div>
             </section>
                 
             <section data-place="Chilliwack">
@@ -136,8 +149,9 @@
                
                 <h5>Pohick Bay Regional Park</h5>
                     <ul>
-                        <li>What is the history</li>
-                        <li>What makes it unique and related to what we are thinking about</li>
+                        <li>Established in 60s</li>
+                        <li>As part of NRVPA, part of mission is to be a resource and partner with community</li>
+                        <li>Eagle Scouts, Mason Neck Horse Coalition</li>
                     </ul>
                    
             </section>
@@ -146,7 +160,8 @@
                 
                 <h5>Our Research</h5>
                     <ul>
-                        <li>What exactly did we make with the maps</li>
+                        <li>Test out OS participatory mapping project to meet park needs</li>
+                        
                     </ul>
         
             </section>
@@ -165,7 +180,7 @@
                 
                 <h5>Data Cleaning and Ancillary Data</h5>
                     <ul>
-                        <li>QIGS for formatting</li>
+                        <li>QGIS for formatting</li>
                         <li>Eagle Scouts' GPX</li>
                         <li>Awesome POSM</li>
                     </ul>
@@ -201,6 +216,13 @@
                         <li>Talk to communities before you map</li>
                     </ul>
             
+            </section>
+            
+             <section data-place="Mason_Neck" 
+                     style="background: rgba(0,0,0,.0) !important;
+                            border-top-left-radius:10px;
+                            border-top-right-radius:10px;
+                            color: white">
             </section>
             
             </div>

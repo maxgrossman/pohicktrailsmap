@@ -2,7 +2,7 @@
 layout: person
 permalink: /team/triston/
 name: Tristan Gounard
-image: /images/tristan.jpg
+image: /img/team/tristan.png
 published: true
 ---
 

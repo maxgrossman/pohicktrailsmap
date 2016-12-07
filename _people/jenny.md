@@ -2,9 +2,9 @@
 layout: person
 permalink: /team/jenny/
 name: Jenny Mannix
-image: /images/jenny.png
+image: /img/team/jenny.png
 published: true
 ---
 
 
-Jenny Mannix is senior at GW double majoring in International Affairs and Geography with a concentration in International Environmental Studies and a minor in GIS. Her favorite animal is a cow. 
+Jenny Mannix is senior at George Washington double majoring in International Affairs and Geography with a concentration in International Environmental Studies and a minor in GIS. Her favorite animal is a cow. 

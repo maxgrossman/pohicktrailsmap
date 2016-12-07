@@ -2,7 +2,7 @@
 layout: person
 permalink: /team/max/
 name: Max Grossman
-image: {{ site.baseurl }}/images/max.png
+image: /images/max.png
 published: true
 ---
 

@@ -2,7 +2,7 @@
 layout: person
 permalink: /team/jacob/
 name: Jacob Pavlik
-image: {{ site.baseurl }}/images/jacob.png
+image: /images/jacob.png
 published: true
 ---
 

@@ -2,7 +2,7 @@
 layout: person
 permalink: /team/jenny/
 name: Jenny Mannix
-image: {{ site.baseurl }}/images/jenny.png
+image: /images/jenny.png
 published: true
 ---
 

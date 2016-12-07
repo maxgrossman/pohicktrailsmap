@@ -6,4 +6,4 @@ image: /img/team/tristan.png
 published: true
 ---
 
-Tristan rules. 
+Tristan is an undergraduate at George Washington studying geography and computer science. He codes really well.  

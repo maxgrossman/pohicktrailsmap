@@ -4,3 +4,125 @@ title: Maps
 permalink: /maps/
 ---
 
+<link rel="stylesheet" href="../css/leaflet.css">   
+<script src="../js/leaflet/leaflet.js" type="text/javascript"></script>
+<script src="../js/leaflet-providers.js" type="text/javascript"></script>
+<script src="../js/jquery-2.1.1.min.js" type="text/javascript"></script>
+
+<style>
+            #map{ height: 500px; width: 100%}
+</style>
+
+<div>
+
+    <h3 style="text-align:center;">Print Map</h3>
+
+        <img src="../img/static_map.jpg"/>
+
+    <h3 style="margin-top:15px;
+               text-align:center;">Interactive Map</h3>
+    
+                
+    <div>
+        <div id="map"></div>
+            
+                            
+            <script>
+            // initialize the map, in a map variable
+            var map = L.map('map').setView([38.6754, -77.1776], 15);
+                        
+                        
+            // add basemap. thanks leaflet-providers.
+            L.tileLayer.provider('Stamen.Terrain').addTo(map);
+                        
+            //array to store layers for each feature type
+            //var mapLayerGroups = [];
+                        
+            // load GeoJSON from an external file
+            $.getJSON("BlueTrail.geojson",function(data){
+                       
+                L.geoJson(data, {
+                    style: function (feature) {
+                        if(feature.properties.name == "Blue Main"){
+                            return {
+                                color : "#436EEE",
+                                opacity: .9,
+                                weight: 2,
+                                dashArray:"8,4"
+                            };
+                        }
+                        else{
+                            return {
+                                color : "#FF8C00",
+                                opacity: .9,
+                                weight: 2,
+                                dashArray:"8,4"
+                            };
+                        }
+                    }}).addTo(map);
+                });
+                        
+                $.getJSON("EastRedTrailAndCutback.geojson",function(data){
+                    L.geoJson(data, {
+                        style: function (feature) {
+                            return {
+                                color : "#E7002E",
+                                opacity: .9,
+                                weight: 2,
+                                dashArray:"8,4"};
+                        }}).addTo(map);
+                    });
+                        
+                $.getJSON("LowerWhiteAndYellowTrail.geojson",function(data){
+                    L.geoJson(data, {
+                        style: function (feature) {
+                            if(feature.properties.name == "Yellow#3"){
+                                return {
+                                    color : "yellow",
+                                    opacity: .9,
+                                    weight: 2,
+                                    dashArray:"8,4"
+                                };
+                            }
+                        else{
+                            return {
+                                color : "white",
+                                opacity: 1,
+                                weight: 2,
+                                dashArray:"8,4"
+                            };
+                            }
+                        }}).addTo(map);
+                });
+                        
+                $.getJSON("NorthWhiteTrailAndParkingLot.geojson",function(data){
+                    L.geoJson(data, {
+                        style: function (feature) {
+                           return {
+                                color : "#F8F8FF",
+                                opacity: .9,
+                                weight: 2,
+                                dashArray:"8,4"
+                            };
+                        }
+                    }).addTo(map);
+                });
+                        
+                $.getJSON("WestRedTrailAndServiceRoad.geojson",function(data){
+                    L.geoJson(data, {
+                        style: function (feature) {
+                            return {
+                                color : "#E7002E",
+                                opacity: .9,
+                                weight: 2,
+                                dashArray:"8,4"
+                            };
+                        }}).addTo(map);
+                });    
+            
+                L.control.scale().addTo(map);
+
+            </script>
+    </div>
+                
+</div>

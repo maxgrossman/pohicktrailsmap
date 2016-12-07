@@ -8,12 +8,32 @@
             selector: '[data-place]',
             breakpointPos: '33.333%',
             createMap: function () {
-                // create a map in the "map" div, set the view to a given place and zoom
-                var map = L.map('map').setView([38.6622286,-77.1955531], 12);
-
-                // add an OpenStreetMap tile layer
-                L.tileLayer.provider('Stamen.Terrain').addTo(map);
-
+                
+                // basemaps
+                var terrain = L.tileLayer.provider('Stamen.Terrain'),
+                    pohick = L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", 
+                                         {attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+                                         maxZoom: 18,
+                                         id: 'maxgrossman.6p4kskbt',
+                                         accessToken: 'pk.eyJ1IjoibWF4Z3Jvc3NtYW4iLCJhIjoiY2loZTQ5bHpxMGlyaXRwbHpsN3FscjA3bSJ9.ry1OJsQ5SCbhrH7fYd7adg'});
+            33    
+                
+                // map
+                
+                var map = L.map('map', {layers: [terrain]}).setView([38.6622286,-77.1955531],12);
+            
+                // baseLayers and overlayLyaers to toggle between
+                
+                var baseLayers = {
+                    "Stamen" : terrain,
+                    "Pohick" : pohick
+                };
+                
+                                
+                // controls to do that toggling
+                
+                L.control.layers(baseLayers).addTo(map);
+                
                 return map;
             }
         };

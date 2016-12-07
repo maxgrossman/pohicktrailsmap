@@ -10,9 +10,8 @@ permalink: /team/
   <div>
     {% for person in site.people %}
       <div>
-        <h4>
-            <a href="{{ person.url }}">{{ person.name }}</a>
-        </h4>
+          <h4 style="color:rgba(13,49,133,0.8)">
+              {{ person.name }}</h4>
         <div>
             {% if person.image %}
                 <img width="130px" src=" {{ person.image }}">
